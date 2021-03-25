@@ -1,5 +1,6 @@
 # from django.shortcuts import render
 from rest_framework import generics
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from .serializer import BreedSerializer
 from .models import Breeds
 from breeds.permissions import IsOwnerOrReadOnly
