@@ -51,6 +51,25 @@ argon2 = ["argon2-cffi (>=16.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-cors-headers"
+version = "3.7.0"
+description = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
+
+[[package]]
+name = "django-environ"
+version = "0.4.5"
+description = "Django-environ allows you to utilize 12factor inspired environment variables to configure your Django application."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "djangorestframework"
 version = "3.12.2"
 description = "Web APIs for Django, made easy."
@@ -80,6 +99,25 @@ doc = ["Sphinx (>=1.6.5,<2)", "sphinx-rtd-theme (>=0.1.9)"]
 lint = ["flake8", "pep8", "isort"]
 python-jose = ["python-jose (==3.0.0)"]
 test = ["cryptography", "pytest-cov", "pytest-django", "pytest-xdist", "pytest", "tox"]
+
+[[package]]
+name = "docopt"
+version = "0.6.2"
+description = "Pythonic argument parser, that will make you smile"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "gitignore"
+version = "0.0.8"
+description = "gitignore command generates .gitingore files from the command line."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+docopt = ">=0.6.2"
 
 [[package]]
 name = "gunicorn"
@@ -228,7 +266,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "508e3f1daecb3e2cacada677d990bb2f8fb3774daf0171631d81217928f3cf3c"
+content-hash = "27bfc9c75df9d3275f4ce2b989ac508af47f3294d8499a1883a5470009adc8cc"
 
 [metadata.files]
 asgiref = [
@@ -251,6 +289,14 @@ django = [
     {file = "Django-3.1.7-py3-none-any.whl", hash = "sha256:baf099db36ad31f970775d0be5587cc58a6256a6771a44eb795b554d45f211b8"},
     {file = "Django-3.1.7.tar.gz", hash = "sha256:32ce792ee9b6a0cbbec340123e229ac9f765dff8c2a4ae9247a14b2ba3a365a7"},
 ]
+django-cors-headers = [
+    {file = "django-cors-headers-3.7.0.tar.gz", hash = "sha256:96069c4aaacace786a34ee7894ff680780ec2644e4268b31181044410fecd12e"},
+    {file = "django_cors_headers-3.7.0-py3-none-any.whl", hash = "sha256:1ac2b1213de75a251e2ba04448da15f99bcfcbe164288ae6b5ff929dc49b372f"},
+]
+django-environ = [
+    {file = "django-environ-0.4.5.tar.gz", hash = "sha256:6c9d87660142608f63ec7d5ce5564c49b603ea8ff25da595fd6098f6dc82afde"},
+    {file = "django_environ-0.4.5-py2.py3-none-any.whl", hash = "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4"},
+]
 djangorestframework = [
     {file = "djangorestframework-3.12.2-py3-none-any.whl", hash = "sha256:0209bafcb7b5010fdfec784034f059d512256424de2a0f084cb82b096d6dd6a7"},
     {file = "djangorestframework-3.12.2.tar.gz", hash = "sha256:0898182b4737a7b584a2c73735d89816343369f259fea932d90dc78e35d8ac33"},
@@ -258,6 +304,12 @@ djangorestframework = [
 djangorestframework-simplejwt = [
     {file = "djangorestframework_simplejwt-4.6.0-py3-none-any.whl", hash = "sha256:bd587700b6ab34a6c6b12d426cce4fa580d57ef1952ad4ba3b79707784619ed3"},
     {file = "djangorestframework_simplejwt-4.6.0.tar.gz", hash = "sha256:7adc913ba0d2ed7f46e0b9bf6e86f9bd9248f1c4201722b732b8213e0ea66f9f"},
+]
+docopt = [
+    {file = "docopt-0.6.2.tar.gz", hash = "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"},
+]
+gitignore = [
+    {file = "gitignore-0.0.8.tar.gz", hash = "sha256:fc74214c6bec2a241a43efd45bc4028500352b5d928f35a4ffd1c3ed59187642"},
 ]
 gunicorn = [
     {file = "gunicorn-20.0.4-py2.py3-none-any.whl", hash = "sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c"},
